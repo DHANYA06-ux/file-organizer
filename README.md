@@ -14,6 +14,7 @@ Automatically sorts files into categories like Images, Documents, Videos, etc., 
 - Undo Last Organize
 - Customizable Categories via `config.json`
 - Summary Report after Organizing
+- Graph Representation of Organized Files (via Matplotlib)
 - Activity Logging
 - Duplicate File Detection
 - Auto-Scheduler: automatically organize a folder at set intervals
@@ -23,7 +24,20 @@ Automatically sorts files into categories like Images, Documents, Videos, etc., 
 
 - Frontend: Tkinter (Python GUI)  
 - Backend: Python 3.x  
-- Libraries: `os`, `shutil`, `json`, `tkinter`, `ttk`, `hashlib`, `logging`, `schedule`  
+- Libraries: os, shutil, json, tkinter, ttk, hashlib, logging, schedule, matplotlib
+
+
+## Graph Representation
+
+After organizing, the app automatically generates a bar or pie chart using Matplotlib
+to show the distribution of files by category (e.g., Documents, Images, Videos, etc.).
+
+Example:
+Bar chart shows how many files were sorted into each category.
+Helps visualize your folder’s composition and storage usage.
+The chart window closes automatically after viewing.
+(Requires matplotlib — install it using pip install matplotlib if not already installed.)
+
 
 ## How to Run
 
