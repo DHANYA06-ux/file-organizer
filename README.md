@@ -4,8 +4,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 A desktop File Organizer built with Python and Tkinter.  
-Automatically sorts files into categories like Images, Documents, Videos, etc., with features such as undo, logging, and customizable categories.
-
+Automatically sorts files into categories like Images, Documents, Videos, etc., with features such as undo, logging, customizable categories, and auto-scheduling.
 
 ## Features
 
@@ -17,16 +16,14 @@ Automatically sorts files into categories like Images, Documents, Videos, etc., 
 - Summary Report after Organizing
 - Activity Logging
 - Duplicate File Detection
+- Auto-Scheduler: automatically organize a folder at set intervals
 - Dark/Light Mode Ready
-
 
 ## Tech Stack
 
 - Frontend: Tkinter (Python GUI)  
 - Backend: Python 3.x  
-- Libraries: `os`, `shutil`, `json`, `tkinter`, `ttk`, `hashlib`, `logging`  
-
-
+- Libraries: `os`, `shutil`, `json`, `tkinter`, `ttk`, `hashlib`, `logging`, `schedule`  
 
 ## How to Run
 
@@ -47,9 +44,13 @@ python file_organiser_enhanced.py
    * Click **Browse** and select a folder
    * Click **Organize** to start sorting
    * Check the newly created folders (Documents, Images, Videos, etc.)
+   * Optional: Click **Undo Last Organize** to revert changes
 
-4. Undo last action: Click **Undo Last Organize**.
+4. Auto-Scheduler:
 
+   * Click **Start Auto-Scheduler**
+   * Enter interval in minutes (default 1440 = 1 day)
+   * The program will automatically organize the folder at the set interval
 
 ## Configuration (`config.json`)
 
@@ -66,28 +67,30 @@ Define file categories in `config.json`:
 ```
 
 You can edit or add your own categories.
+The program normalizes extensions automatically.
 
 ## Log Files
 
-* `activity.log` — Logs all operations and errors
+* `activity.log` — Logs all operations, errors, and auto-scheduler runs
 * `last_move.json` — Stores temporary data for undo functionality
-
 
 ## Folder Structure
 
 project/
+
+```
 ├── file_organiser_enhanced.py
 ├── config.json
 ├── activity.log
 ├── last_move.json
 └── README.md
-
+```
 
 ## Future Enhancements
 
-* Auto-scheduler for daily organizing
 * Cloud backup support (Google Drive / OneDrive)
 * Drag & Drop file support
+* Stop Auto-Scheduler button
 
 ## Author
 
@@ -95,8 +98,19 @@ Dhanya R.V
 Project: File Organizer
 Language: Python (Tkinter GUI)
 
+## Contact
 
-##  Contact
-
-If you encounter any issues or have suggestions for improvement,  
+If you encounter any issues or have suggestions for improvement,
 feel free to **open an issue** or contact the maintainer.
+
+I included:
+
+1. **Auto-scheduler instructions**  
+2. Mention of `schedule` library in Tech Stack  
+3. Notes about logs recording scheduler activity  
+4. Minor wording tweaks for clarity  
+
+If you want, I can also **add a “Stop Auto-Scheduler” instruction and button** in the README to make it fully complete.  
+
+Do you want me to add that too?
+
