@@ -219,3 +219,11 @@
 2025-10-25 18:40:43,504 - INFO - Undo: C:\Users\91843\Downloads\Others\App.config -> C:\Users\91843\Downloads\App.config
 2025-10-25 18:40:43,506 - INFO - Undo: C:\Users\91843\Downloads\Others\Anaconda3-2025.06-0-Windows-x86_64.exe -> C:\Users\91843\Downloads\Anaconda3-2025.06-0-Windows-x86_64.exe
 2025-10-25 18:40:43,507 - INFO - Undo: C:\Users\91843\Downloads\Documents\5a3efdfb-8482-4a55-9a45-7fbd3e263ec0.pptx -> C:\Users\91843\Downloads\5a3efdfb-8482-4a55-9a45-7fbd3e263ec0.pptx
+2025-10-26 20:08:28,425 - ERROR - Organise failed
+Traceback (most recent call last):
+  File "C:\Users\91843\OneDrive\Documents\Desktop\project\file_organiser_enhanced.py", line 685, in _organise_worker
+    self._update_progress(0)
+  File "C:\Users\91843\OneDrive\Documents\Desktop\project\file_organiser_enhanced.py", line 739, in _update_progress
+    self.safe_after(1, lambda: self.progress.set(val))
+    ^^^^^^^^^^^^^^^
+AttributeError: 'FileOrganiserApp' object has no attribute 'safe_after'
