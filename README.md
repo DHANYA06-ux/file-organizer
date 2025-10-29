@@ -1,130 +1,151 @@
-# Enhanced File Organizer (Tkinter + Python)
+🗂️ File Organiser App
 
-[![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://www.python.org/)  
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-
-A desktop File Organizer built with Python and Tkinter.  
-Automatically sorts files into categories like Images, Documents, Videos, etc., with features such as undo, logging, customizable categories, and auto-scheduling.
-
-## Features
-
-- Graphical Interface using Tkinter
-- Automatic File Sorting
-- Progress Bar and Status Display
-- Undo Last Organize
-- Customizable Categories via `config.json`
-- Summary Report after Organizing
-- Graph Representation of Organized Files (via Matplotlib)
-- Activity Logging
-- Duplicate File Detection
-- Auto-Scheduler: automatically organize a folder at set intervals
-- Dark/Light Mode Ready
-
-## Tech Stack
-
-- Frontend: Tkinter (Python GUI)  
-- Backend: Python 3.x  
-- Libraries: os, shutil, json, tkinter, ttk, hashlib, logging, schedule, matplotlib
+**Smart Desktop Tool to Automatically Organize Files**
 
 
-## Graph Representation
+📘 **Project Overview**
 
-After organizing, the app automatically generates a bar or pie chart using Matplotlib
-to show the distribution of files by category (e.g., Documents, Images, Videos, etc.).
+The **File Organiser App** is a modern desktop application built using **Python (Tkinter / CustomTkinter)** that helps users **organize files inside a selected folder automatically** based on file types such as images, documents, videos, and music.
 
-Example:
-Bar chart shows how many files were sorted into each category.
-Helps visualize your folder’s composition and storage usage.
-The chart window closes automatically after viewing.
-(Requires matplotlib — install it using pip install matplotlib if not already installed.)
+It also supports **undo**, **duplicate finder**, **auto-scheduler**, **backup**, **voice feedback**, and **theme customization** — all within a stylish GUI interface.
 
+ 🚀 **Features**
 
-## How to Run
+✅ **Automatic File Sorting**
+Organizes files into subfolders (Images, Documents, Videos, Music, Others).
 
-1. Open **PowerShell or CMD** in your project folder:
+✅ **Duplicate Finder**
+Detects and optionally deletes duplicate files based on content hash (SHA-256).
+
+✅ **Undo Last Action**
+Reverts the most recent organization operation.
+
+✅ **Scheduler**
+Automatically runs the organizer at regular time intervals (user-defined in minutes).
+
+✅ **Summary & Graph View**
+Displays file distribution summary and live graph visualization (Matplotlib).
+
+✅ **Voice Feedback**
+Uses text-to-speech (pyttsx3) to announce task completion.
+
+✅ **Light / Dark Theme Modes**
+Toggle between themes instantly.
+
+✅ **Custom Accent Colors**
+Choose between Green, Blue, or Purple UI color themes.
+
+✅ **Backup & Restore**
+Quickly create a backup of your selected folder.
+
+✅ **Privacy Cleaner**
+Deletes activity logs and configuration files.
+
+🧰 **Technologies Used**
+
+| Component     | Library / Tool                 |
+| ------------- | ------------------------------ |
+| GUI           | CustomTkinter / Tkinter        |
+| File Handling | OS, Shutil, Pathlib            |
+| Plotting      | Matplotlib                     |
+| Voice Engine  | pyttsx3                        |
+| Threading     | threading                      |
+| Hashing       | hashlib (for duplicate finder) |
+
+ 🖥️ **How to Run**
+
+**1️⃣ Install Dependencies**
+
+Make sure you have **Python 3.12+** installed, then open a terminal and run:
 
 ```bash
-cd "C:\Users\91843\OneDrive\Documents\Desktop\project"
-````
+pip install customtkinter matplotlib pyttsx3
+```
 
-2. Run the program:
+> (If some libraries fail to install, the app still runs with minimal fallbacks.)
+
+### **2️⃣ Run the Application**
+
+Save the script as `file_organiser_perfect.py`, then run:
 
 ```bash
-python file_organiser_enhanced.py
+python file_organiser_perfect.py
 ```
 
-3. Use the app:
+📂 **How It Works**
 
-   * Click **Browse** and select a folder
-   * Click **Organize** to start sorting
-   * Check the newly created folders (Documents, Images, Videos, etc.)
-   * Optional: Click **Undo Last Organize** to revert changes
+1. **Browse** → Select a folder using the **Browse** button.
+2. **Organise Now** → Instantly sorts files into category folders.
+3. **Undo Last** → Moves files back to their original location.
+4. **Find Duplicates** → Scans and shows duplicate files. Option to delete duplicates.
+5. **Start Scheduler** → Automates organizing every *N* minutes.
+6. **Settings** → Change theme, accent color, clock format, language, and privacy options.
+7. **Backup** → Creates a copy of your files in `_backup` folder.
 
-4. Auto-Scheduler:
+📊 **Outputs**
 
-   * Click **Start Auto-Scheduler**
-   * Enter interval in minutes (default 1440 = 1 day)
-   * The program will automatically organize the folder at the set interval
+* **Organized Folder Structure**
 
-## Configuration (`config.json`)
+  ```
+  📁 MyFolder
+  ├── Images/
+  ├── Documents/
+  ├── Videos/
+  ├── Music/
+  ├── Others/
+  └── _backup/  (if backup created)
+  ```
 
-Define file categories in `config.json`:
+* **Summary Panel** → Shows counts for each file type.
+* **Bar Graph** → Displays file distribution visually.
+* **Voice Message** → “Files Organized Successfully!”
 
-```json
-{
-  "Images": ["jpg", "jpeg", "png"],
-  "Documents": ["pdf", "docx", "txt"],
-  "Videos": ["mp4", "mkv"],
-  "Audio": ["mp3", "wav"],
-  "Archives": ["zip", "rar"]
-}
-```
+ **User Interface Layout**
 
-You can edit or add your own categories.
-The program normalizes extensions automatically.
+| Section            | Description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| **Sidebar (Left)** | Home, Open Folder, Settings, Exit                            |
+| **Main Area**      | Headings, Browse Field, Action Buttons                       |
+| **Buttons**        | Organise Now • Start Scheduler • Undo Last • Find Duplicates |
+| **Graph Area**     | Displays organized file statistics                           |
+| **Summary Box**    | Shows category counts (bottom-right)                         |
 
-## Log Files
 
-* `activity.log` — Logs all operations, errors, and auto-scheduler runs
-* `last_move.json` — Stores temporary data for undo functionality
+⚙️ **Configuration & Logs**
 
-## Folder Structure
+* **activity.log** → Tracks organization events
+* **config.json** → Stores custom file type mappings
+* **_backup/** → Stores backup copies when created
 
-project/
+Use **Clear Logs** in *Settings → Privacy Cleaner* to erase them safely.
 
-```
-├── file_organiser_enhanced.py
-├── config.json
-├── activity.log
-├── last_move.json
-└── README.md
-```
+🔒 **Safety Features**
 
-## Future Enhancements
+* Files moved, not deleted (reversible using Undo).
+* Duplicate deletion is optional and confirmed.
+* Backup option ensures data safety before organizing.
 
-* Cloud backup support (Google Drive / OneDrive)
-* Drag & Drop file support
-* Stop Auto-Scheduler button
+🧑‍💻 **Developer Info**
 
-## Author
+**Developer:** Dhanya R.V
+**Version:** 1.0
+**Theme:** Dark / Green
+**Tagline:** *“Smart desktop tool to sort files quickly and safely.”*
 
-Dhanya R.V
-Project: File Organizer
-Language: Python (Tkinter GUI)
 
-## Contact
+🗣️ **Voice Output Example**
 
-If you encounter any issues or have suggestions for improvement,
-feel free to **open an issue** or contact the maintainer.
+> 🎙️ “Files Organized Successfully!”
 
-I included:
+ 📸 **Screenshots (Recommended for Report)**
 
-1. **Auto-scheduler instructions**  
-2. Mention of `schedule` library in Tech Stack  
-3. Notes about logs recording scheduler activity  
-4. Minor wording tweaks for clarity  
+1. **Home Page with Buttons**
+2. **After Organization – Summary and Graph**
+3. **Duplicate Finder Window**
+4. **Settings Window**
 
-If you want, I can also **add a “Stop Auto-Scheduler” instruction and button** in the README to make it fully complete.  
+🏁 **Conclusion**
 
-Do you want me to add that too?
+The **File Organiser App** is a powerful and user-friendly tool designed to keep your system folders clean and organized automatically.
+Its mix of **automation**, **customization**, and **voice feedback** makes it an efficient solution for everyday file management.
 

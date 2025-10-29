@@ -227,3 +227,4 @@ Traceback (most recent call last):
     self.safe_after(1, lambda: self.progress.set(val))
     ^^^^^^^^^^^^^^^
 AttributeError: 'FileOrganiserApp' object has no attribute 'safe_after'
+2025-10-29 11:42:41,630 - INFO - Organised 0 files in C:\Users\91843\AppData\Local\Temp\tmpmsx91dxo
