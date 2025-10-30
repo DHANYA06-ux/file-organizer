@@ -64,26 +64,34 @@ python file_organiser_perfect.py
 
 🧩 **UI Sections**
 
-> Sidebar: Home, Open Folder, Settings, Exit
-> Main Area: Browse field, Buttons (Organise, Undo, Duplicates, Scheduler)
-> Graph & Summary: Shows file stats and counts
+Sidebar: Home, Open Folder, Settings, Exit. 
+
+Main Area: Browse field, Buttons (Organise, Undo, Duplicates, Scheduler). 
+
+Graph & Summary: Shows file stats and counts. 
 
 
 ⚙️ **Config & Logs**
 
-activity.log – Tracks actions
-config.json – Saves preferences
-_backup/ – Folder backups
+activity.log – Tracks actions, 
+
+config.json – Saves preferences, 
+
+_backup/ – Folder backups, 
+
 Use Privacy Cleaner in settings to clear data.
 
 
 
 🔒 **Safe Features**
 
-Files moved, not deleted
-Undo available anytime
-Duplicate deletion optional
-Backup ensures safety
+Files moved, not deleted. 
+
+Undo available anytime. 
+
+Duplicate deletion optional. 
+
+Backup ensures safety. 
 
 
 
