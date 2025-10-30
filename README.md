@@ -21,6 +21,9 @@
 
 
 
+
+
+
 🧰 **Technologies Used:**
 
 | Feature | Library |
@@ -34,6 +37,9 @@
 
 
 
+
+
+
 🖥️ **How to Run**:
 
 1️⃣ Install Python 3.12+  
@@ -42,6 +48,9 @@
 pip install customtkinter matplotlib pyttsx3
 python file_organiser_perfect.py
 ```
+
+
+
 
 
 📂 **Folder Output Example**
@@ -62,6 +71,9 @@ python file_organiser_perfect.py
 
 
 
+
+
+
 🧩 **UI Sections**
 
 Sidebar: Home, Open Folder, Settings, Exit. 
@@ -69,6 +81,11 @@ Sidebar: Home, Open Folder, Settings, Exit.
 Main Area: Browse field, Buttons (Organise, Undo, Duplicates, Scheduler). 
 
 Graph & Summary: Shows file stats and counts. 
+
+
+
+
+
 
 
 ⚙️ **Config & Logs**
@@ -83,6 +100,10 @@ Use Privacy Cleaner in settings to clear data.
 
 
 
+
+
+
+
 🔒 **Safe Features**
 
 Files moved, not deleted. 
@@ -92,6 +113,11 @@ Undo available anytime.
 Duplicate deletion optional. 
 
 Backup ensures safety. 
+
+
+
+
+
 
 
 
