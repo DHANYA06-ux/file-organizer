@@ -1,9 +1,9 @@
 🗂️ File Organiser App - Smart Desktop Tool to Automatically Organize Files
 
 📘 Overview:
->>> The **File Organiser App** is a Python-based desktop tool built with **Tkinter / CustomTkinter**.  
->>> It automatically organizes files in a selected folder into categories like **Images**, **Videos**, **Music**, **Documents**, and **Others** — including **Sub-Documents** under Documents.
->>> The app includes **Undo**, **Duplicate Finder**, **Scheduler**, **Voice Feedback**, **Backup**, and **Theme Customization** features — all in one simple GUI.
+> The **File Organiser App** is a Python-based desktop tool built with **Tkinter / CustomTkinter**.  
+> It automatically organizes files in a selected folder into categories like **Images**, **Videos**, **Music**, **Documents**, and **Others** — including **Sub-Documents** under Documents.
+> The app includes **Undo**, **Duplicate Finder**, **Scheduler**, **Voice Feedback**, **Backup**, and **Theme Customization** features — all in one simple GUI.
 
 
 
