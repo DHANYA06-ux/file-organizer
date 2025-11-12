@@ -55,16 +55,36 @@ python file_organiser_perfect.py
 
 📂 **Folder Output Example**
 
+<<<<<<< HEAD
 📁 MyFolder
 ├── Images/
 ├── Videos/
 ├── Music/
 ├── Documents/
+=======
+
+📁 MyFolder
+
+├── Images/
+
+├── Videos/
+
+├── Music/
+
+├── Documents/
+
+>>>>>>> cb14cdd (Initial commit)
 │   ├── PDF/
 │   ├── Word/
 │   ├── Excel/
 │   └── Others/
+<<<<<<< HEAD
 ├── Others/
+=======
+
+├── Others/
+
+>>>>>>> cb14cdd (Initial commit)
 └── _backup/
 
 🎙️ Voice Output: “Files Organized Successfully!”
@@ -75,6 +95,14 @@ python file_organiser_perfect.py
 
 
 🧩 **UI Sections**
+<<<<<<< HEAD
+=======
+Sidebar: Home, Open Folder, Settings, Exit
+
+Main Area: Browse field, Buttons (Organise, Undo, Duplicates, Scheduler)
+
+Graph & Summary: Shows file stats and counts
+>>>>>>> cb14cdd (Initial commit)
 
 Sidebar: Home, Open Folder, Settings, Exit. 
 
@@ -86,10 +114,21 @@ Graph & Summary: Shows file stats and counts.
 
 
 
+<<<<<<< HEAD
 
 
 ⚙️ **Config & Logs**
 
+=======
+⚙️ **Config & Logs**
+
+activity.log – Tracks actions
+
+config.json – Saves preferences
+
+_backup/ – Folder backups 
+
+>>>>>>> cb14cdd (Initial commit)
 activity.log – Tracks actions, 
 
 config.json – Saves preferences, 
@@ -106,6 +145,17 @@ Use Privacy Cleaner in settings to clear data.
 
 🔒 **Safe Features**
 
+<<<<<<< HEAD
+=======
+Files moved, not deleted
+
+Undo available anytime
+
+Duplicate deletion optional
+
+Backup ensures safety
+
+>>>>>>> cb14cdd (Initial commit)
 Files moved, not deleted. 
 
 Undo available anytime. 
@@ -115,12 +165,15 @@ Duplicate deletion optional.
 Backup ensures safety. 
 
 
+<<<<<<< HEAD
 
 
 
 
 
 
+=======
+>>>>>>> cb14cdd (Initial commit)
 🧑‍💻 **Developer Info**
 
 Developer: Dhanya R.V
